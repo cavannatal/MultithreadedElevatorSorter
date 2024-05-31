@@ -1,0 +1,5 @@
+The scheduling algorithm I used utilized the two main functionalities of First-Come-First-Serve (FCFS) and Shortest-Process-Next (SPN).
+
+I utilized FCFS by processing requets in the order that they come in by placing them in the personQueue. The InputThread function is constantly listening for incoming requests for processing, and then add it into the personQueue. I also implemented SPN by using a distanced based scoring variable to evaluate how quickly an elevator can the request based on its current position relative to the request's start floor. It also calculates whether the elevator's current movement direction aligns with the direction needed to reach the person. It also factors in the capacity of how many current people are in the elevator and how many people are left to collect.
+
+At first I tried using the Fair Share Scheduler algorithm and group the elevators to carry through certain floors. That worked but then when I got to the highrise it was more diffcult to split all those tasks up within the time constraints given.
